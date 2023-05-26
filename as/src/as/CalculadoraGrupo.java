@@ -6,7 +6,7 @@ class Calculadora {
         return numero1 + numero2;
     }
 
-    public double restar(double numero1, double numero2) {
+    public static double restar(double numero1, double numero2) {
         return numero1 - numero2;
     }
 
