@@ -21,6 +21,11 @@ class Calculadora {
             throw new ArithmeticException("No se puede dividir entre cero.");
         }
     }
+
+	public static double potencia(double numero1, double numero2) {
+		double resultado = Math.pow(numero1, numero2);
+		return resultado;
+	}
 }
 
 public class CalculadoraGrupo {
@@ -41,6 +46,7 @@ public class CalculadoraGrupo {
         System.out.println("2. Resta");
         System.out.println("3. Multiplicación");
         System.out.println("4. División");
+        System.out.println("5. Potencia");
 
         System.out.print("Opción: ");
         int opcion = scanner.nextInt();
@@ -64,6 +70,9 @@ public class CalculadoraGrupo {
                     System.out.println(e.getMessage());
                     return;
                 }
+                break;
+            case 5:
+            	resultado = calculadora.potencia(numero1, numero2);
                 break;
             default:
                 System.out.println("Opción inválida.");
